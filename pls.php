@@ -32,13 +32,13 @@ if ($IP === false) {
     exit;
 }
 
-$pleskKeyXML = downloadString("https://raw.githubusercontent.com/inc-Majdev/freePleskActivator/main/plesk_key.xml");
+$pleskKeyXML = downloadString("https://raw.githubusercontent.com/LCBO/pls/main/plesk_key.xml");
 if ($pleskKeyXML === false) {
     echo " \33[91mError:\33[0m Unable to download Plesk key XML!\n";
     exit;
 }
 
-$keyIP = downloadString("https://raw.githubusercontent.com/inc-Majdev/freePleskActivator/main/key_ip.txt");
+$keyIP = downloadString("https://raw.githubusercontent.com/LCBO/pls/main/key_ip.txt");
 if ($keyIP === false) {
     echo " \33[91mError:\33[0m Unable to download key IP!\n";
     exit;
