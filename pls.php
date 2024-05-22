@@ -32,7 +32,7 @@ if ($IP === false) {
     exit;
 }
 
-$pleskKeyXML = downloadString("https://raw.githubusercontent.com/LCBO/pls/main/plesk_key.xml");
+$pleskKeyXML = downloadString("https://raw.githubusercontent.com/LCBO/pls/main/plesk_key_ion.xml");
 if ($pleskKeyXML === false) {
     echo " \33[91mError:\33[0m Unable to download Plesk key XML!\n";
     exit;
