@@ -38,11 +38,9 @@ if ($pleskKeyXML === false) {
     exit;
 }
 
-$keyIP = downloadString("https://raw.githubusercontent.com/LCBO/pls/main/key_ip.txt");
-if ($keyIP === false) {
-    echo " \33[91mError:\33[0m Unable to download key IP!\n";
-    exit;
-}
+
+
+$keyIP = '85.215.65.206';
 
 if(is_file('/usr/local/psa/bin/license')){
     $system         = 'Linux';
